@@ -1,0 +1,57 @@
+{
+  "businessName": "Creston Premium Collections",
+  "motto": "Quality, Style, Trust",
+  "phone": "+254792878586",
+  "whatsapp": "+254792878586",
+  "paybill": "542542",
+  "accountNo": "118988",
+  "email": "info@crestonpremium.co.ke",
+  "location": "Gatwick Business Centre, Shop D2, Ruai,Along Kangundo Road, Nairobi, Kenya",
+  "logoUrl": "https://res.cloudinary.com/k901z9bp/image/upload/f_auto/q_auto/Creston_logo.jpg",
+  "announcement": "🌟 Updated Announcement: Genuine Melbourne & Sydney Imports in Ruai Kenya!",
+  "hero": {
+    "badge": "100% Authentic Australian Imports",
+    "title": "Luxury Australian Fashion Collection in Kenya",
+    "subtitle": "Handpicked premium linen, pure merino wool, boutique dresses, and streetwear directly imported from Melbourne & Sydney. Available at our Ruai showroom & delivered countrywide.",
+    "ctaText": "Explore Aussie Collection",
+    "ctaLink": "#shop",
+    "secondaryCtaText": "Lipa Na M-Pesa Guide",
+    "secondaryCtaLink": "#paybill-info",
+    "bannerImage": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80"
+  },
+  "about": {
+    "badge": "Our Ruai & Australian Heritage",
+    "title": "Bridging Australian Quality & Kenyan Elegance",
+    "story": "Creston Premium Collections was established in Ruai, Nairobi with a singular mission: to supply authentic, high-grade Australian imported clothing to discerning shoppers across Kenya. We source premium garments from Melbourne, Sydney, and Byron Bay, bringing you timeless designs crafted from Australian linen, heavyweight cotton, and pure merino wool.",
+    "mottoDescription": "Our hallmark is built on Quality, Style, and Trust. We inspect every piece to guarantee unmatched durability, crisp cuts, and luxurious comfort suited for the Kenyan climate and modern lifestyle.",
+    "sourcingGuarantee": "Every garment is authenticated and imported from reputable Australian fashion houses, ensuring you get true international value without compromise.",
+    "locationInfo": "Based along Kangundo Road in Ruai, Nairobi. We offer swift local doorstep drop-offs in Ruai and surrounding areas, same-day delivery within Nairobi CBD, and tracked parcel dispatch to any town in Kenya.",
+    "pickupAddress": "Gatwick Business Centre, Shop D2, Along Kangundo Road, Ruai Town Center, Nairobi"
+  },
+  "deliveryRates": [
+    {
+      "id": "ruai_pickup",
+      "name": "Ruai Hub Pickup (Free)",
+      "fee": 0,
+      "estimate": "Ready in 1 hour"
+    },
+    {
+      "id": "ruai_local",
+      "name": "Ruai & Kangundo Rd Doorstep Delivery",
+      "fee": 150,
+      "estimate": "Same Day"
+    },
+    {
+      "id": "nairobi_cbd",
+      "name": "Nairobi CBD & Environs",
+      "fee": 250,
+      "estimate": "Same Day / Next Day"
+    },
+    {
+      "id": "countrywide",
+      "name": "Countrywide Delivery (Speedaf / Fargo / Matatu Parcel)",
+      "fee": 400,
+      "estimate": "24-48 Hours"
+    }
+  ]
+}

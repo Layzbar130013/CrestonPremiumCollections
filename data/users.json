@@ -1,0 +1,85 @@
+[
+  {
+    "id": "user_admin_1",
+    "username": "admin",
+    "passwordHash": "40efe8c600c4cd9c777e5c2430746ac3:1946d0895fc0c0895cd96196ae6b280cab6557fcc798f3186485759fee0e69079ba9e04aa7942e2000b983e23f5be7177cf57600201b42ff9ad09be774b54c94",
+    "name": "Super Administrator",
+    "role": "admin",
+    "rights": [
+      "view_stocks",
+      "edit_inventory",
+      "admin"
+    ],
+    "createdAt": "2026-10-04T12:12:11.111Z",
+    "updatedAt": "2026-10-08T23:42:10.358Z"
+  },
+  {
+    "id": "user_staff_1",
+    "username": "ruaistaff",
+    "passwordHash": "4dd5917568e22ebc601ec1a907ce9701:718fcbdefdd1aee7b3dd0239852c25a15b2d9655d9a083008e8d987359b383ca031da47783eefac3a49138c75b507e90d667299f84c2b6f2f6a9b78d9866c2da",
+    "name": "Ruai Storekeeper",
+    "role": "staff",
+    "rights": [
+      "view_stocks",
+      "edit_inventory"
+    ],
+    "createdAt": "2026-10-04T12:12:11.176Z"
+  },
+  {
+    "id": "user_staff_2",
+    "username": "stockviewer",
+    "passwordHash": "7743ed273d5bbcf2b4d44af40112c65c:e6897d2561990e4826bf3b588b24e7abd2ded6c5d6a3154e9699cb50d6bd0065e1a2b2df6ae5f66921d8e58505e4903700424217e0ebfb8bbfd053e639386b90",
+    "name": "Inventory Auditor",
+    "role": "staff",
+    "rights": [
+      "view_stocks"
+    ],
+    "createdAt": "2026-10-04T12:12:11.234Z"
+  },
+  {
+    "id": "user_1791143262295",
+    "username": "Brian",
+    "passwordHash": "b5fd6d7fef09f04b87b4961b4093c34f:d823f19f1712ebee8f845dd2a03109727890900082a86eb8889c099770496b3398310f3165d948b3a46cb6117575f9f7ca0ddc739c861da474b54fd2089b5b13",
+    "name": "Brian Muiruri",
+    "role": "admin",
+    "rights": [
+      "view_stocks",
+      "edit_inventory",
+      "admin"
+    ],
+    "createdAt": "2026-10-04T19:47:42.400Z"
+  },
+  {
+    "id": "user_1791502831791",
+    "username": "auditor_1791502831787",
+    "passwordHash": "592bef8d102c2c74f0998bac0aec157d:2f017633bf626ad904f4c556d0c4742d8097fd0f833a9b31377151c81868d850bc7744997b88f1617ccf2db3f7503d23d28788df780fa3126109bc180caa9297",
+    "name": "Auditor Wangari",
+    "role": "staff",
+    "rights": [
+      "view_stocks"
+    ],
+    "createdAt": "2026-10-08T23:40:31.862Z"
+  },
+  {
+    "id": "user_1791502841946",
+    "username": "auditor_1791502841942",
+    "passwordHash": "e9b45a4eb9bb53b3a78c5301b7e8fed7:bfa939a0d50e5b333f2113a654eb768f0c0af9bf946f479190ca9811871037642d33a3267652552e5308cfb439333f2c78a31e268941a7170d94f54d4c16c5d5",
+    "name": "Auditor Wangari",
+    "role": "staff",
+    "rights": [
+      "view_stocks"
+    ],
+    "createdAt": "2026-10-08T23:40:42.022Z"
+  },
+  {
+    "id": "user_1791502929871",
+    "username": "auditor_1791502929867",
+    "passwordHash": "70abf469429e09e7159ea4052cc6db2e:7a5cdccd916a0b9923d3991880d52b9dcc4ac370db027d02901c6baa78b21fbb373fe759e07e401c543915c11e881fb93745d7fbbd6ab11c9f36bd184ef25836",
+    "name": "Auditor Wangari",
+    "role": "staff",
+    "rights": [
+      "view_stocks"
+    ],
+    "createdAt": "2026-10-08T23:42:09.934Z"
+  }
+]

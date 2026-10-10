@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creston Premium Collections | Australian Imported Clothes | Ruai, Kenya</title>
+  <meta name="description" content="Creston Premium Collections - Authentic Australian imported clothes in Ruai, Nairobi Kenya. Linen shirts, merino wool knitwear, boutique dresses, and streetwear. Pay via Lipa Na M-Pesa Paybill 542542. Quality, Style, Trust.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-text">
+      <span id="topAnnouncementText">🌟 Authentic Australian Imports • Ruai Hub & Countrywide Delivery • Lipa Na M-Pesa Paybill 542542</span>
+    </div>
+    <div class="announcement-contacts">
+      <a href="tel:+254792878586" class="announcement-link" id="topPhoneLink">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span id="topPhoneText">+254 792 878 586</span>
+      </a>
+      <a href="https://wa.me/254792878586" target="_blank" class="announcement-link" id="topWhatsappLink" style="color: #4ade80;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>WhatsApp Order</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="brand-area">
+        <div class="brand-logo-icon" id="logoIconDisplay">CP</div>
+        <img src="" alt="Creston Logo" class="brand-logo-img" id="logoImgDisplay" style="display: none;">
+        <div class="brand-text">
+          <h1 id="brandNameDisplay">Creston Premium Collections</h1>
+          <span class="brand-tagline" id="brandMottoDisplay">Quality, Style, Trust</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#shop" class="nav-link active">Catalog</a></li>
+        <li><a href="#shop" class="nav-link" onclick="setCategoryFilter('Men')">Men's Linen</a></li>
+        <li><a href="#shop" class="nav-link" onclick="setCategoryFilter('Women')">Women's Boutique</a></li>
+        <li><a href="#paybill-info" class="nav-link">Lipa Na M-Pesa</a></li>
+        <li><a href="#about" class="nav-link">About Us & Ruai</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <!-- Sign In Link (Unobtrusive) -->
+        <button class="icon-btn discrete-account-btn" id="discreteLoginBtn" title="Sign In" aria-label="Sign in">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span id="accountBtnLabel">Sign In</span>
+        </button>
+
+        <!-- Shopping Cart Trigger -->
+        <button class="icon-btn cart-btn" id="openCartBtn" aria-label="View shopping bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Bag</span>
+          <span class="cart-badge" id="cartBadgeCount">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileNav()"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-area">
+        <div class="brand-logo-icon" style="width: 36px; height: 36px; font-size: 1rem;">CP</div>
+        <div class="brand-text">
+          <div style="font-size: 0.95rem; font-weight: 800; color: var(--primary);">Creston Premium</div>
+          <span style="font-size: 0.7rem; color: var(--accent); font-weight: 700;">Quality, Style, Trust</span>
+        </div>
+      </div>
+      <button class="close-drawer-btn" onclick="closeMobileNav()">&times;</button>
+    </div>
+
+    <div class="mobile-nav-body">
+      <div class="mobile-nav-group-title">Collections</div>
+      <ul class="mobile-nav-list">
+        <li><a href="#shop" onclick="closeMobileNav(); setCategoryFilter('All');">🇦🇺 All Australian Apparel</a></li>
+        <li><a href="#shop" onclick="closeMobileNav(); setCategoryFilter('Men');">👔 Men's Australian Linen</a></li>
+        <li><a href="#shop" onclick="closeMobileNav(); setCategoryFilter('Women');">👗 Women's Boutique Dresses</a></li>
+        <li><a href="#shop" onclick="closeMobileNav(); setCategoryNav('Unisex');">🧶 Australian Merino & Knits</a></li>
+      </ul>
+
+      <div class="mobile-nav-group-title">Store & Information</div>
+      <ul class="mobile-nav-list">
+        <li><a href="#paybill-info" onclick="closeMobileNav()">💳 Lipa Na M-Pesa Guide (542542)</a></li>
+        <li><a href="#about" onclick="closeMobileNav()">📍 Ruai Showroom & Delivery</a></li>
+        <li><a href="javascript:void(0)" onclick="closeMobileNav(); openLoginModal();">👤 Account Sign In</a></li>
+      </ul>
+
+      <div class="mobile-nav-contacts">
+        <div style="font-size: 0.78rem; text-transform: uppercase; color: #94a3b8; font-weight: 700; margin-bottom: 6px;">Need Assistance in Ruai?</div>
+        <a href="tel:+254792878586" class="mobile-contact-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call: +254 792 878 586</span>
+        </a>
+        <a href="https://wa.me/254792878586" target="_blank" class="mobile-contact-pill whatsapp">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp Chat</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-overlay" id="heroBgOverlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge-tag" id="heroBadgeTag">
+          <span>🦘</span>
+          <span id="heroBadgeText">100% Authentic Australian Imports</span>
+        </div>
+        <h2 class="hero-title" id="heroTitleText">Australian Fashion Elegance in Kenya</h2>
+        <p class="hero-subtitle" id="heroSubtitleText">
+          Handpicked premium flax linen, pure merino wool, boutique dresses, and streetwear directly imported from Melbourne & Sydney. Available at our Ruai showroom & delivered countrywide.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#shop" class="btn-primary" id="heroCtaLink">
+            <span id="heroCtaText">Explore Aussie Collection</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#paybill-info" class="btn-secondary" id="heroSecondaryCtaLink">
+            <span id="heroSecondaryCtaText">Lipa Na M-Pesa Guide</span>
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="hero-stat-card">
+            <h3>Melbourne</h3>
+            <p>Direct Fashion Imports</p>
+          </div>
+          <div class="hero-stat-card">
+            <h3>Ruai Hub</h3>
+            <p>Local Nairobi Showroom</p>
+          </div>
+          <div class="hero-stat-card">
+            <h3>Paybill 542542</h3>
+            <p>Instant Safaricom Payment</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-card-showcase">
+        <div class="showcase-header">
+          <div class="aussie-flag-badge">
+            <span>🇦🇺 Genuine Australian Imports</span>
+          </div>
+          <span style="font-size: 0.8rem; color: #fbbf24; font-weight: 700;">★ 4.9 Rating</span>
+        </div>
+
+        <!-- Compact Paybill Card in Hero -->
+        <div class="paybill-box-compact">
+          <div class="paybill-row">
+            <span style="font-size: 0.8rem; color: #d1fae5; font-weight: 700;">LIPA NA M-PESA PAYBILL</span>
+            <span class="paybill-copy-tag" onclick="copyText('542542', 'Paybill copied!')">Copy</span>
+          </div>
+          <div class="paybill-row" style="margin-top: 6px;">
+            <span>Business No: <strong id="heroPaybillDisplay" style="color: #ffffff; font-size: 1.1rem; letter-spacing: 0.5px;">542542</strong></span>
+            <span>Acc: <strong id="heroAccountDisplay" style="color: #ffffff; font-size: 1.1rem; letter-spacing: 0.5px;">118988</strong></span>
+          </div>
+        </div>
+
+        <div class="ruai-loc-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="heroLocationTag">Ruai Town, Kangundo Road, Nairobi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Trust Bar -->
+  <section class="trust-bar">
+    <div class="trust-container">
+      <div class="trust-item">
+        <div class="trust-icon">🇦🇺</div>
+        <div class="trust-info">
+          <h4>Australian Imports</h4>
+          <p>Authentic Melbourne & Sydney apparel</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💳</div>
+        <div class="trust-info">
+          <h4>Lipa Na M-Pesa</h4>
+          <p>Paybill 542542 • Acc: 118988</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📍</div>
+        <div class="trust-info">
+          <h4>Ruai Pickup & Delivery</h4>
+          <p>Local drop-offs & express countrywide</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">✨</div>
+        <div class="trust-info">
+          <h4>Quality, Style, Trust</h4>
+          <p>Guaranteed authentic materials</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Shop & Catalog Section -->
+  <section class="shop-section" id="shop">
+    <div class="section-header">
+      <div class="section-title-wrap">
+        <h2>Australian Imported Wardrobe</h2>
+        <p>Curated premium pieces crafted from pure linen, merino wool, and tailored cotton</p>
+      </div>
+    </div>
+
+    <!-- Controls Bar -->
+    <div class="shop-controls">
+      <div class="category-tabs" id="categoryTabs">
+        <button class="cat-pill active" onclick="setCategoryFilter('All')">All Items</button>
+        <button class="cat-pill" onclick="setCategoryFilter('Men')">Men's Collection</button>
+        <button class="cat-pill" onclick="setCategoryFilter('Women')">Women's Collection</button>
+        <button class="cat-pill" onclick="setCategoryFilter('Unisex')">Unisex & Knits</button>
+      </div>
+
+      <div class="search-sort-group">
+        <div class="search-box">
+          <svg class="search-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search clothes...">
+        </div>
+        <select id="sortSelect" class="sort-select" onchange="renderProducts()">
+          <option value="featured">Featured Aussie Picks</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="stock-desc">Highest Stock</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Injected via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Lipa Na M-Pesa Paybill Guide Section -->
+  <section class="paybill-guide-section" id="paybill-info">
+    <div class="guide-container">
+      <div class="paybill-banner-box">
+        <div class="paybill-banner-text">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.15); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px;">
+            <span>LIPA NA M-PESA PAYBILL</span>
+          </div>
+          <h3>Seamless Mobile Checkout</h3>
+          <p>
+            Shopping from Ruai or anywhere in Kenya? Pay with ease directly from your phone using Safaricom M-Pesa. Your order is processed and reserved immediately.
+          </p>
+
+          <div class="paybill-numbers-card">
+            <div class="number-item">
+              <div>
+                <span class="number-label">Business Paybill Number</span>
+                <div class="number-val" id="guidePaybillNumber">542542</div>
+              </div>
+              <button class="copy-btn-mpesa" onclick="copyText(document.getElementById('guidePaybillNumber').innerText, 'Paybill copied!')">
+                <span>Copy</span>
+              </button>
+            </div>
+            <div class="number-item">
+              <div>
+                <span class="number-label">Account Number</span>
+                <div class="number-val" id="guideAccountNumber">118988</div>
+              </div>
+              <button class="copy-btn-mpesa" onclick="copyText(document.getElementById('guideAccountNumber').innerText, 'Account No copied!')">
+                <span>Copy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mpesa-steps-list">
+          <h4 style="font-size: 1.1rem; font-weight: 800; color: #008751; margin-bottom: 16px; display: flex; align-items: center; gap: 6px;">
+            <span>How To Pay in 5 Easy Steps:</span>
+          </h4>
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-text">
+              <h5>Open M-Pesa</h5>
+              <p>Go to SIM Toolkit or M-Pesa App on your smartphone.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-text">
+              <h5>Select Lipa na M-Pesa</h5>
+              <p>Choose <strong>Paybill</strong> from the options.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-text">
+              <h5>Enter Business No</h5>
+              <p>Input <strong id="stepPaybill">542542</strong> as the Business Number.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-text">
+              <h5>Enter Account No</h5>
+              <p>Input <strong id="stepAccount">118988</strong> (or your Order Ref).</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">5</div>
+            <div class="step-text">
+              <h5>Enter Amount & PIN</h5>
+              <p>Enter the item amount, type your M-Pesa PIN, and press Send.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us & Ruai Location Section -->
+  <section class="about-section" id="about">
+    <div class="about-grid">
+      <div class="about-content-card">
+        <span class="about-badge" id="aboutBadge">Our Ruai & Australian Heritage</span>
+        <h3 class="about-title" id="aboutTitle">Bridging Australian Quality & Kenyan Elegance</h3>
+        <p class="about-story" id="aboutStory">
+          Creston Premium Collections was established in Ruai, Nairobi with a singular mission: to supply authentic, high-grade Australian imported clothing to discerning shoppers across Kenya. We source premium garments from Melbourne, Sydney, and Byron Bay, bringing you timeless designs crafted from Australian linen, heavyweight cotton, and pure merino wool.
+        </p>
+
+        <div class="motto-banner">
+          <div class="motto-tag" id="aboutMottoDisplay">Quality, Style, Trust</div>
+          <div class="motto-exp" id="aboutMottoDesc">
+            Our hallmark is built on Quality, Style, and Trust. We inspect every piece to guarantee unmatched durability, crisp cuts, and luxurious comfort suited for the Kenyan climate and modern lifestyle.
+          </div>
+        </div>
+
+        <p style="font-size: 0.92rem; color: #64748b;" id="aboutGuarantee">
+          Every garment is authenticated and imported from reputable Australian fashion houses, ensuring you get true international value without compromise.
+        </p>
+      </div>
+
+      <div class="ruai-card">
+        <h4>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Ruai Hub & Express Delivery</span>
+        </h4>
+        <p id="aboutLocationInfo">
+          Based along Kangundo Road in Ruai, Nairobi. We offer swift local doorstep drop-offs in Ruai and surrounding areas, same-day delivery within Nairobi CBD, and tracked parcel dispatch to any town in Kenya.
+        </p>
+
+        <div class="delivery-options-list" id="deliveryRatesList">
+          <!-- Populated from settings -->
+        </div>
+
+        <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Showroom Address</div>
+            <div style="font-size: 0.88rem; font-weight: 700; color: var(--primary);" id="pickupAddressText">
+              Creston Boutique Hub, Ruai Town Center, Kangundo Road, Nairobi
+            </div>
+          </div>
+          <a href="https://wa.me/254792878586?text=Hello%20Creston%20Premium%20Collections,%20I%20would%20like%20to%20visit%20your%20Ruai%20hub" target="_blank" class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem; background: var(--whatsapp); color: #ffffff;">
+            <span>WhatsApp Ruai Hub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 id="footerBrandName">Creston Premium Collections</h4>
+        <p id="footerMotto">Quality, Style, Trust.</p>
+        <p style="color: #64748b; font-size: 0.82rem;">
+          Specialists in authentic Australian imported garments, luxury flax linen, pure merino wool, and contemporary fashion in Ruai, Nairobi, Kenya.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Lipa Na M-Pesa</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 6px;">Paybill: <strong id="footerPaybill" style="color: #ffffff;">542542</strong></p>
+        <p style="font-size: 0.85rem; margin-bottom: 6px;">Account No: <strong id="footerAccount" style="color: #ffffff;">118988</strong></p>
+        <p style="font-size: 0.78rem; color: #64748b;">Instant Safaricom mobile confirmation.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ruai Location & Orders</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 6px;" id="footerPhone">Phone: +254 792 878 586</p>
+        <p style="font-size: 0.85rem; margin-bottom: 6px;" id="footerWhatsapp">WhatsApp: +254 792 878 586</p>
+        <p style="font-size: 0.85rem;" id="footerLocation">Ruai, Kangundo Rd, Nairobi</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#shop">Australian Catalog</a></li>
+          <li><a href="#paybill-info">Paybill Guide</a></li>
+          <li><a href="#about">About Our Heritage</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="currentYear">2026</span> <span id="footerCopyrightName">Creston Premium Collections</span>. All Rights Reserved. Ruai, Kenya.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Shopping Bag</span>
+      </h3>
+      <button class="close-drawer-btn" onclick="closeCart()">&times;</button>
+    </div>
+
+    <div class="cart-body" id="cartItemList">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="form-group" style="margin-bottom: 12px;">
+        <label style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted);">Delivery Option</label>
+        <select id="cartDeliverySelect" class="form-control" onchange="updateCartTotals()">
+          <!-- Delivery rates injected -->
+        </select>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Items Subtotal:</span>
+        <span id="cartSubtotalText">KSh 0</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Delivery Fee:</span>
+        <span id="cartDeliveryFeeText">KSh 0</span>
+      </div>
+      <div class="cart-total-line">
+        <span>Total Payable:</span>
+        <span id="cartGrandTotalText" style="color: var(--accent);">KSh 0</span>
+      </div>
+
+      <button class="btn-checkout-mpesa" onclick="openCheckoutModal()">
+        <span>Lipa Na M-Pesa Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+
+      <button onclick="orderCartOnWhatsapp()" class="btn-whatsapp-order" style="width: 100%; margin-top: 8px; font-weight: 700; font-size: 0.9rem; padding: 12px;">
+        <span>Order via WhatsApp directly</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Product Details / Quick View Modal -->
+  <div class="modal-overlay" id="productModalOverlay">
+    <div class="modal-container" id="productModalContainer" style="max-width: 600px;">
+      <div class="modal-header">
+        <h4 id="modalProdTitle">Product Details</h4>
+        <button class="modal-close-btn" onclick="closeProductModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalProdBody">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lipa Na M-Pesa Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModalOverlay">
+    <div class="modal-container" id="checkoutModalContainer" style="max-width: 500px;">
+      <div class="modal-header">
+        <h4 style="color: #008751; display: flex; align-items: center; gap: 8px;">
+          <span>Lipa Na M-Pesa Paybill</span>
+        </h4>
+        <button class="modal-close-btn" onclick="closeCheckoutModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="checkoutFormStep">
+          <!-- Order Summary banner -->
+          <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.95rem;">
+              <span>Total to Pay:</span>
+              <span id="checkoutAmountDisplay" style="color: #008751; font-size: 1.15rem;">KSh 0</span>
+            </div>
+            <div style="font-size: 0.78rem; color: #64748b; margin-top: 4px;" id="checkoutItemSummary">
+              0 items selected
+            </div>
+          </div>
+
+          <!-- Customer details -->
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="custNameInput" class="form-control" placeholder="e.g. Grace Wanjiku" required>
+          </div>
+          <div class="form-group">
+            <label>M-Pesa Phone Number *</label>
+            <input type="tel" id="custPhoneInput" class="form-control" placeholder="e.g. 0792878586" required>
+            <small style="color: #64748b; font-size: 0.75rem;">Used for payment confirmation and delivery tracking</small>
+          </div>
+          <div class="form-group">
+            <label>Delivery Location / Landmark in Ruai or County *</label>
+            <input type="text" id="custAddressInput" class="form-control" placeholder="e.g. Ruai Junction, Quickmart area / Nairobi CBD" required>
+          </div>
+
+          <!-- M-Pesa Paybill instructions box -->
+          <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; padding: 14px; margin-bottom: 18px;">
+            <div style="font-size: 0.8rem; font-weight: 800; color: #065f46; margin-bottom: 8px;">
+              PAYMENT INSTRUCTIONS (SAFARICOM M-PESA)
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span style="font-size: 0.85rem; color: #047857;">Paybill Number:</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <strong id="modalPaybillNumber" style="font-size: 1.05rem; color: #065f46;">542542</strong>
+                <button class="copy-btn-mpesa" onclick="copyText(document.getElementById('modalPaybillNumber').innerText, 'Paybill copied!')">Copy</button>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span style="font-size: 0.85rem; color: #047857;">Account Number:</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <strong id="modalAccountNumber" style="font-size: 1.05rem; color: #065f46;">118988</strong>
+                <button class="copy-btn-mpesa" onclick="copyText(document.getElementById('modalAccountNumber').innerText, 'Account No copied!')">Copy</button>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.85rem; color: #047857;">Amount to Pay:</span>
+              <strong id="modalTotalPayable" style="font-size: 1.05rem; color: #065f46;">KSh 0</strong>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>M-Pesa Transaction Code (Optional / From SMS)</label>
+            <input type="text" id="custMpesaCodeInput" class="form-control" placeholder="e.g. QKH789XYZ1" style="text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">
+            <small style="color: #64748b; font-size: 0.75rem;">If you have paid, enter code for instant automated clearance</small>
+          </div>
+
+          <button class="btn-checkout-mpesa" id="submitOrderBtn" onclick="submitMpesaOrder()">
+            <span>Confirm Order with M-Pesa</span>
+          </button>
+        </div>
+
+        <!-- Success step -->
+        <div id="checkoutSuccessStep" style="display: none; text-align: center; padding: 20px 10px;">
+          <div style="width: 60px; height: 60px; background: #dcfce7; color: #16a34a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin: 0 auto 16px;">
+            ✓
+          </div>
+          <h4 style="font-size: 1.3rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">Order Received!</h4>
+          <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
+            Thank you for shopping at Creston Premium Collections. Your order reference is:
+          </p>
+          <div style="background: #f1f5f9; padding: 12px; border-radius: 8px; font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 20px;" id="confirmedOrderId">
+            CP-0000
+          </div>
+          <p style="font-size: 0.85rem; color: #475569; margin-bottom: 24px;">
+            Our Ruai team has received your order details and is preparing your Australian imported items for delivery.
+          </p>
+
+          <a id="whatsappShareReceiptBtn" href="#" target="_blank" class="btn-primary" style="width: 100%; background: var(--whatsapp); color: #ffffff; justify-content: center;">
+            <span>Send Receipt to Creston WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign-In Modal (Discrete Account Sign In) -->
+  <div class="modal-overlay" id="loginModalOverlay">
+    <div class="modal-container" id="loginModalContainer" style="max-width: 400px;">
+      <div class="modal-header">
+        <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--primary);">Sign In</h4>
+        <button class="modal-close-btn" onclick="closeLoginModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 18px;">
+          Enter your credentials to access your account.
+        </p>
+
+        <form id="loginForm" onsubmit="handleLoginSubmit(event)">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="loginUsername" class="form-control" placeholder="Enter your username" required autocomplete="username">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required autocomplete="current-password">
+          </div>
+
+          <div id="loginErrorMessage" style="display: none; padding: 10px 12px; background: #fee2e2; color: #b91c1c; border-radius: 6px; font-size: 0.82rem; margin-bottom: 14px;">
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px; font-size: 0.95rem;">
+            <span id="loginSubmitText">Sign In</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Sticky Navigation Bar (Active on smartphones <= 640px) -->
+  <nav class="mobile-bottom-bar" id="mobileBottomBar" aria-label="Mobile Navigation">
+    <a href="#hero" class="mob-bottom-item active" id="mobNavHome">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="#shop" class="mob-bottom-item" id="mobNavShop">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      <span>Catalog</span>
+    </a>
+    <a href="#paybill-info" class="mob-bottom-item" id="mobNavPaybill">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+      <span>M-Pesa</span>
+    </a>
+    <button class="mob-bottom-item" onclick="openCart()" id="mobNavBag">
+      <div style="position: relative; display: inline-flex;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge mob-badge" id="mobCartBadgeCount">0</span>
+      </div>
+      <span>Bag</span>
+    </button>
+    <button class="mob-bottom-item" onclick="handleAccountAction()" id="mobNavAccount">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <span id="mobAccountLabel">Sign In</span>
+    </button>
+  </nav>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

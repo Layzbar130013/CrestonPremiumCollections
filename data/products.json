@@ -1,0 +1,280 @@
+[
+  {
+    "id": "prod_1791502929850",
+    "name": "Sydney Harbourside Silk Blend Scarf",
+    "category": "Unisex",
+    "price": 1800,
+    "originalPrice": 2400,
+    "stock": 15,
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Standard"
+    ],
+    "origin": "Imported from Sydney, Australia",
+    "description": "Fine Australian silk-cotton blend scarf.",
+    "imageUrl": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=800&q=80",
+    "featured": true,
+    "inStock": true,
+    "rating": 5,
+    "badge": "Sydney Boutique",
+    "createdAt": "2026-10-08T23:42:09.850Z",
+    "updatedAt": "2026-10-08T23:42:09.860Z"
+  },
+  {
+    "id": "prod_1791502841927",
+    "name": "Sydney Harbourside Silk Blend Scarf",
+    "category": "Unisex",
+    "price": 1800,
+    "originalPrice": 2400,
+    "stock": 14,
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Standard"
+    ],
+    "origin": "Imported from Sydney, Australia",
+    "description": "Fine Australian silk-cotton blend scarf.",
+    "imageUrl": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=800&q=80",
+    "featured": true,
+    "inStock": true,
+    "rating": 5,
+    "badge": "Sydney Boutique",
+    "createdAt": "2026-10-08T23:40:41.927Z",
+    "updatedAt": "2026-10-08T23:40:41.935Z"
+  },
+  {
+    "id": "prod_1791502831768",
+    "name": "Sydney Harbourside Silk Blend Scarf",
+    "category": "Unisex",
+    "price": 1800,
+    "originalPrice": 2400,
+    "stock": 14,
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Standard"
+    ],
+    "origin": "Imported from Sydney, Australia",
+    "description": "Fine Australian silk-cotton blend scarf.",
+    "imageUrl": "https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?auto=format&fit=crop&w=800&q=80",
+    "featured": true,
+    "inStock": true,
+    "rating": 5,
+    "badge": "Sydney Boutique",
+    "createdAt": "2026-10-08T23:40:31.768Z",
+    "updatedAt": "2026-10-08T23:40:31.778Z"
+  },
+  {
+    "id": "prod_1791116147150",
+    "name": "Polo_White Tshirt",
+    "category": "Unisex",
+    "price": 1100,
+    "originalPrice": 2400,
+    "stock": 14,
+    "sizes": [
+      "One Size"
+    ],
+    "colors": [
+      "Standard"
+    ],
+    "origin": "Imported from Sydney, Australia",
+    "description": "Fine Australian silk-cotton polo.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/f_auto,q_auto/IMG-20260916-WA0044",
+    "featured": true,
+    "inStock": true,
+    "rating": 5,
+    "badge": "Sydney Boutique",
+    "createdAt": "2026-10-04T12:15:47.150Z",
+    "updatedAt": "2026-10-04T15:25:52.455Z"
+  },
+  {
+    "id": "prod_2",
+    "name": "Polo_Black T-shrit",
+    "category": "Unisex",
+    "price": 1100,
+    "originalPrice": 5800,
+    "stock": 4,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Terracotta Coral",
+      "Oatmeal Beige",
+      "Ocean Navy"
+    ],
+    "origin": "Imported from Sydney, Australia",
+    "description": "Iconic Australian coastal style. Breathable organic linen dress featuring tie-waist detail, delicate side slit, and elegant V-neckline. Perfect for weekend getaways and smart daytime events.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118663/IMG-20260916-WA0037.jpg",
+    "featured": true,
+    "inStock": true,
+    "rating": 5,
+    "badge": "Best Seller",
+    "updatedAt": "2026-10-04T15:27:31.403Z"
+  },
+  {
+    "id": "prod_3",
+    "name": "Polo_Blue T-shrit",
+    "category": "Unisex",
+    "price": 1100,
+    "originalPrice": 6800,
+    "stock": 9,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Charcoal Heather",
+      "Oatmeal Wool",
+      "Forest Green"
+    ],
+    "origin": "100% Australian Merino Wool",
+    "description": "Crafted from world-renowned Australian fine merino wool. Non-scratchy, temperature-regulating luxury knitwear that keeps you stylishly warm through cool Kenyan afternoons.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118663/IMG-20260916-WA0052.jpg",
+    "featured": true,
+    "inStock": true,
+    "rating": 4.8,
+    "badge": "Pure Merino Wool",
+    "updatedAt": "2026-10-04T15:28:33.725Z"
+  },
+  {
+    "id": "prod_4",
+    "name": "Polo_Light Blue T-shrit",
+    "category": "Men",
+    "price": 1100,
+    "originalPrice": 3000,
+    "stock": 25,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Vintage Black",
+      "Washed Khaki",
+      "Off-White"
+    ],
+    "origin": "Australian Surf & Streetwear",
+    "description": "Heavyweight Australian combed cotton tee with ribbed crew collar and drop-shoulder silhouette.For a vintage Australian coastal feel.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118663/IMG-20260916-WA0068.jpg",
+    "featured": true,
+    "inStock": true,
+    "rating": 4.9,
+    "badge": "Heavyweight Cotton",
+    "updatedAt": "2026-10-04T15:29:50.059Z"
+  },
+  {
+    "id": "prod_5",
+    "name": "Polo_Blue T-shrit",
+    "category": "Unisex",
+    "price": 1190,
+    "originalPrice": 6200,
+    "stock": 14,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Floral Botanical",
+      "Golden Sunrise"
+    ],
+    "origin": "Imported from Queensland, Australia",
+    "description": "Luxurious Australian designer maxi dress featuring tiered ruffle hems, adjustable wrap neckline, and vibrant Australian botanical print.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118664/IMG-20260916-WA0075.jpg",
+    "featured": false,
+    "inStock": true,
+    "rating": 4.7,
+    "badge": "Designer Maxi",
+    "updatedAt": "2026-10-04T15:30:53.092Z"
+  },
+  {
+    "id": "prod_6",
+    "name": "Polo_White T-shrit",
+    "category": "Men",
+    "price": 1300,
+    "originalPrice": 4500,
+    "stock": 15,
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "British Khaki",
+      "Navy Blue",
+      "Slate Gray"
+    ],
+    "origin": "Imported from Melbourne, Australia",
+    "description": "White Dri-fit colored polo with Blue stichings to provide a bright look on a bright Monday Morning.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118665/IMG-20260916-WA0107.jpg",
+    "featured": false,
+    "inStock": true,
+    "rating": 4.8,
+    "badge": "Aussie Chino",
+    "updatedAt": "2026-10-04T15:33:01.470Z"
+  },
+  {
+    "id": "prod_7",
+    "name": "Polo_Green T-shrit",
+    "category": "Unisex",
+    "price": 1100,
+    "originalPrice": 6500,
+    "stock": 7,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Washed Indigo Blue",
+      "Smoked Black"
+    ],
+    "origin": "Australian Street Boutique",
+    "description": "Iconic Aussie Polo, and authentic vintage fading. Built to last for years.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118665/IMG-20260916-WA0100.jpg",
+    "featured": true,
+    "inStock": true,
+    "rating": 4.9,
+    "badge": "Vintage Denim",
+    "updatedAt": "2026-10-04T15:34:18.937Z"
+  },
+  {
+    "id": "prod_8",
+    "name": "Perth Resort Cuban Collar Short Sleeve Shirt",
+    "category": "Men",
+    "price": 1100,
+    "originalPrice": 3500,
+    "stock": 16,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Eucalyptus Print",
+      "Sand Stripe",
+      "Midnight Palm"
+    ],
+    "origin": "Western Australia Resort Collection",
+    "description": "Camp-collar resort shirt crafted from airy rayon-cotton blend. Designed for effortless holiday swagger and casual Nairobi hangouts.",
+    "imageUrl": "https://res.cloudinary.com/k901z9bp/image/upload/v1791118664/IMG-20260916-WA0005.jpg",
+    "featured": false,
+    "inStock": true,
+    "rating": 4.6,
+    "badge": "Resort Wear",
+    "updatedAt": "2026-10-04T15:34:57.339Z"
+  }
+]

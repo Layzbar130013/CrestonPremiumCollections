@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin & Inventory Management | Creston Premium Collections</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <aside class="admin-sidebar" id="adminSidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon">CP</div>
+        <div class="sidebar-logo-text">
+          <h2 id="sidebarBrandName">Creston Premium</h2>
+          <span>Management Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <ul class="sidebar-menu">
+      <li class="sidebar-nav-item active" data-tab="overview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+        <span>Dashboard</span>
+      </li>
+
+      <li class="sidebar-nav-item" data-tab="inventory" id="navInventory">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+        <span>Inventory & Stocks</span>
+      </li>
+
+      <li class="sidebar-nav-item" data-tab="orders" id="navOrders">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        <span>Orders & M-Pesa</span>
+      </li>
+
+      <li class="sidebar-nav-item admin-only" data-tab="cms" id="navCms">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span>Front Page & CMS</span>
+        <span class="nav-badge-lock admin-badge">Admin</span>
+      </li>
+
+      <li class="sidebar-nav-item admin-only" data-tab="settings" id="navSettings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Store & Paybill</span>
+        <span class="nav-badge-lock admin-badge">Admin</span>
+      </li>
+
+      <li class="sidebar-nav-item admin-only" data-tab="users" id="navUsers">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>Users & Rights</span>
+        <span class="nav-badge-lock admin-badge">Admin</span>
+      </li>
+
+      <li class="sidebar-nav-item" data-tab="password" id="navPassword">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>Change Password</span>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <div class="user-info-pill">
+        <div class="user-avatar-badge" id="userAvatar">A</div>
+        <div class="user-details">
+          <h5 id="sidebarUserName">Administrator</h5>
+          <span id="sidebarUserRole">Super Admin</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="admin-main">
+    <!-- Topbar -->
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <h2 class="topbar-title" id="pageTitle">Dashboard Overview</h2>
+        <div class="user-rights-tags" id="topbarRightsTags">
+          <!-- Injected rights pills -->
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <a href="/" target="_blank" class="btn-topbar btn-view-store">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span>View Customer Storefront</span>
+        </a>
+        <button class="btn-topbar btn-logout" onclick="handleLogout()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Unauthenticated Login Card Overlay (if accessed directly) -->
+    <div id="adminAuthGate" style="display: none; padding: 40px 20px; max-width: 440px; margin: 40px auto;">
+      <div class="admin-card" style="padding: 30px;">
+        <div style="text-align: center; margin-bottom: 24px;">
+          <div class="sidebar-logo-icon" style="margin: 0 auto 12px; width: 48px; height: 48px; font-size: 1.4rem;">CP</div>
+          <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--primary);">Staff & Admin Portal</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Sign in to manage inventory, settings, and orders</p>
+        </div>
+
+        <form id="gateLoginForm" onsubmit="handleGateLogin(event)">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="gateUsername" class="form-control" placeholder="admin or staff username" required>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="gatePassword" class="form-control" placeholder="••••••••" required>
+          </div>
+
+          <div id="gateErrorMsg" style="display: none; padding: 10px; background: #fee2e2; color: #b91c1c; border-radius: 6px; font-size: 0.85rem; margin-bottom: 14px;">
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px;">
+            Sign In to Management
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Authenticated Content Container -->
+    <div class="admin-content" id="adminMainContent">
+
+      <!-- ======================================================== -->
+      <!-- TAB 1: OVERVIEW -->
+      <!-- ======================================================== -->
+      <section class="tab-pane active" id="tab-overview">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-box-info">
+              <h3 id="statTotalProducts">0</h3>
+              <p>Australian Products</p>
+            </div>
+            <div class="stat-box-icon stat-blue">🦘</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-info">
+              <h3 id="statTotalStock">0</h3>
+              <p>Total Stock Units</p>
+            </div>
+            <div class="stat-box-icon stat-green">📦</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-info">
+              <h3 id="statLowStock">0</h3>
+              <p>Low Stock Alerts (&le; 5)</p>
+            </div>
+            <div class="stat-box-icon stat-amber">⚠️</div>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-box-info">
+              <h3 id="statTotalOrders">0</h3>
+              <p>Orders via Paybill</p>
+            </div>
+            <div class="stat-box-icon stat-purple">💳</div>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3>Ruai Operations & Quick Actions</h3>
+              <p>Quick status of Creston Premium Collections</p>
+            </div>
+          </div>
+          <div class="admin-card-body" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 18px;">
+              <h4 style="color: #008751; margin-bottom: 8px; font-weight: 800;">Lipa Na M-Pesa Configuration</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+                Active Paybill: <strong id="quickPaybillVal">542542</strong> • Account No: <strong id="quickAccVal">118988</strong>
+              </p>
+              <button class="btn-secondary" style="font-size: 0.82rem; padding: 6px 12px;" onclick="switchTab('settings')">
+                Change Paybill Settings
+              </button>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 18px;">
+              <h4 style="color: var(--accent); margin-bottom: 8px; font-weight: 800;">Front Page & Australian Sourcing</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+                Update hero banners, Melbourne flax linen highlights, and Ruai pickup info.
+              </p>
+              <button class="btn-secondary" style="font-size: 0.82rem; padding: 6px 12px;" onclick="switchTab('cms')">
+                Edit Front Page & Story
+              </button>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 18px;">
+              <h4 style="color: #0284c7; margin-bottom: 8px; font-weight: 800;">Staff Permissions</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+                Control who can view stocks or edit inventory.
+              </p>
+              <button class="btn-secondary" style="font-size: 0.82rem; padding: 6px 12px;" onclick="switchTab('users')">
+                Manage Staff & Rights
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 2: INVENTORY & STOCKS -->
+      <!-- ======================================================== -->
+      <section class="tab-pane" id="tab-inventory">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3>Inventory & Australian Apparel Stocks</h3>
+              <p>Add new products, adjust stock quantities, and manage item details</p>
+            </div>
+
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <input type="text" id="inventorySearchInput" class="form-control" placeholder="Search inventory..." style="width: 200px; padding: 8px 12px;">
+              <button class="btn-primary" id="btnOpenAddProduct" onclick="openAddProductModal()">
+                <span>+ Add New Product</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="admin-card-body" style="padding: 0;">
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Product & Origin</th>
+                    <th>Category</th>
+                    <th>Price (KSh)</th>
+                    <th>Stock Units</th>
+                    <th>Status</th>
+                    <th>Sizes</th>
+                    <th style="text-align: right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="inventoryTableBody">
+                  <!-- Populated via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 3: ORDERS & M-PESA -->
+      <!-- ======================================================== -->
+      <section class="tab-pane" id="tab-orders">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3>Customer Orders & Lipa Na M-Pesa Verification</h3>
+              <p>Verify payments made via Paybill 542542, dispatch orders, and communicate on WhatsApp</p>
+            </div>
+          </div>
+
+          <div class="admin-card-body" style="padding: 0;">
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Order Ref</th>
+                    <th>Customer & Phone</th>
+                    <th>Delivery Area</th>
+                    <th>Items</th>
+                    <th>Total (KSh)</th>
+                    <th>M-Pesa Receipt</th>
+                    <th>Status</th>
+                    <th style="text-align: right;">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                  <!-- Populated via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 4: FRONT PAGE & CMS EDITOR -->
+      <!-- ======================================================== -->
+      <section class="tab-pane" id="tab-cms">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3>Edit Front Page Content</h3>
+              <p>Customize the announcement banner, hero texts, imagery, and Ruai highlights</p>
+            </div>
+            <button class="btn-primary" onclick="saveFrontPageCms()">Save Front Page Changes</button>
+          </div>
+
+          <div class="admin-card-body">
+            <div class="form-group">
+              <label>Top Announcement Banner Text</label>
+              <input type="text" id="cmsAnnouncement" class="form-control" placeholder="Banner text on very top of website">
+              <small>Shown at the very top of the mobile and desktop views</small>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Hero Badge Tag</label>
+                <input type="text" id="cmsHeroBadge" class="form-control" placeholder="e.g. 100% Genuine Australian Imports">
+              </div>
+
+              <div class="form-group">
+                <label>Hero Background / Overlay Image URL</label>
+                <input type="text" id="cmsHeroImage" class="form-control" placeholder="https://images.unsplash.com/...">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Hero Main Headline / Title</label>
+              <input type="text" id="cmsHeroTitle" class="form-control" placeholder="e.g. Australian Fashion Elegance in Kenya">
+            </div>
+
+            <div class="form-group">
+              <label>Hero Subtitle / Description</label>
+              <textarea id="cmsHeroSubtitle" class="form-control" rows="3" placeholder="Description of the Australian imported collection and Ruai location"></textarea>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Primary Button Text</label>
+                <input type="text" id="cmsCtaText" class="form-control" placeholder="Explore Aussie Collection">
+              </div>
+              <div class="form-group">
+                <label>Primary Button Link</label>
+                <input type="text" id="cmsCtaLink" class="form-control" placeholder="#shop">
+              </div>
+            </div>
+
+            <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--primary); margin: 30px 0 16px; padding-top: 20px; border-top: 1px solid var(--border);">
+              About Page & Ruai Heritage
+            </h4>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>About Section Badge</label>
+                <input type="text" id="cmsAboutBadge" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>About Section Headline</label>
+                <input type="text" id="cmsAboutTitle" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Our Story (Ruai & Australia)</label>
+              <textarea id="cmsAboutStory" class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Motto Description ("Quality, Style, Trust")</label>
+              <textarea id="cmsAboutMottoDesc" class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Sourcing Guarantee Note</label>
+              <input type="text" id="cmsAboutGuarantee" class="form-control">
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Ruai Location Info</label>
+                <input type="text" id="cmsAboutLocationInfo" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>Ruai Showroom Pickup Address</label>
+                <input type="text" id="cmsAboutPickupAddress" class="form-control">
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <button class="btn-primary" onclick="saveFrontPageCms()">Save All Page Changes</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 5: STORE & M-PESA SETTINGS -->
+      <!-- ======================================================== -->
+      <section class="tab-pane" id="tab-settings">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3>Store, Paybill & Contact Settings</h3>
+              <p>Change your Lipa Na M-Pesa paybill number, phone numbers, WhatsApp, and logo</p>
+            </div>
+            <button class="btn-primary" onclick="saveStoreSettings()">Save Store Settings</button>
+          </div>
+
+          <div class="admin-card-body">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Business Name *</label>
+                <input type="text" id="setBusinessName" class="form-control" value="Creston Premium Collections">
+              </div>
+
+              <div class="form-group">
+                <label>Business Motto *</label>
+                <input type="text" id="setMotto" class="form-control" value="Quality, Style, Trust">
+              </div>
+            </div>
+
+            <!-- Paybill Settings Box -->
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 20px; margin-bottom: 24px;">
+              <h4 style="color: #008751; font-weight: 800; font-size: 1.05rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                <span>💳 Lipa Na M-Pesa Paybill Numbers</span>
+              </h4>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label style="color: #065f46;">Paybill Number *</label>
+                  <input type="text" id="setPaybill" class="form-control" value="542542" style="font-weight: 800; font-size: 1.1rem; color: #008751;">
+                  <small>Displayed to all customers during checkout and in guides</small>
+                </div>
+
+                <div class="form-group">
+                  <label style="color: #065f46;">Account Number *</label>
+                  <input type="text" id="setAccountNo" class="form-control" value="118988" style="font-weight: 800; font-size: 1.1rem; color: #008751;">
+                  <small>Customer uses this or order reference as the account</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="text" id="setPhone" class="form-control" value="+254792878586">
+              </div>
+
+              <div class="form-group">
+                <label>WhatsApp Number *</label>
+                <input type="text" id="setWhatsapp" class="form-control" value="+254792878586">
+                <small>Used for direct WhatsApp order buttons</small>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Business Logo URL</label>
+                <input type="text" id="setLogoUrl" class="form-control" placeholder="https://example.com/logo.png">
+                <small>Leave blank to use default stylish crest icon</small>
+              </div>
+
+              <div class="form-group">
+                <label>Store Email</label>
+                <input type="email" id="setEmail" class="form-control" value="info@crestonpremium.co.ke">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Physical Store Location</label>
+              <input type="text" id="setLocation" class="form-control" value="Ruai, Kangundo Road, Nairobi, Kenya">
+            </div>
+
+            <div style="margin-top: 24px;">
+              <button class="btn-primary" onclick="saveStoreSettings()">Save Store Settings</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 6: USERS & RIGHTS MANAGEMENT -->
+      <!-- ======================================================== -->
+      <section class="tab-pane" id="tab-users">
+        <div class="admin-card">
+          <div class="admin-card-header">
+            <div>
+              <h3>Users & Permission Rights</h3>
+              <p>Add staff accounts and grant specific rights to view stocks, edit inventory, or admin privileges</p>
+            </div>
+            <button class="btn-primary" onclick="openAddUserModal()">+ Add New User / Staff</button>
+          </div>
+
+          <div class="admin-card-body" style="padding: 0;">
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>User & Name</th>
+                    <th>Role</th>
+                    <th>Assigned Rights</th>
+                    <th>Date Added</th>
+                    <th style="text-align: right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="usersTableBody">
+                  <!-- Populated via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 7: CHANGE ADMIN PASSWORD -->
+      <!-- ======================================================== -->
+      <section class="tab-pane" id="tab-password">
+        <div class="admin-card" style="max-width: 500px;">
+          <div class="admin-card-header">
+            <div>
+              <h3>Change Password</h3>
+              <p>Update your admin or staff credentials</p>
+            </div>
+          </div>
+
+          <div class="admin-card-body">
+            <form id="changePasswordForm" onsubmit="handleChangePassword(event)">
+              <div class="form-group">
+                <label>Current Password *</label>
+                <input type="password" id="pwdCurrent" class="form-control" required autocomplete="current-password">
+              </div>
+
+              <div class="form-group">
+                <label>New Password (min 6 characters) *</label>
+                <input type="password" id="pwdNew" class="form-control" required minlength="6" autocomplete="new-password">
+              </div>
+
+              <div class="form-group">
+                <label>Confirm New Password *</label>
+                <input type="password" id="pwdConfirm" class="form-control" required minlength="6" autocomplete="new-password">
+              </div>
+
+              <button type="submit" class="btn-primary" style="margin-top: 10px;">
+                Update Password
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: ADD / EDIT PRODUCT -->
+  <!-- ======================================================== -->
+  <div class="admin-modal-overlay" id="productModal">
+    <div class="admin-modal-container">
+      <div class="admin-modal-header">
+        <h4 id="productModalTitle" style="font-weight: 800; font-size: 1.15rem;">Add Australian Product</h4>
+        <button onclick="closeProductModal()" style="font-size: 1.4rem; color: #94a3b8;">&times;</button>
+      </div>
+
+      <div class="admin-modal-body">
+        <form id="productForm" onsubmit="handleProductFormSubmit(event)">
+          <input type="hidden" id="prodEditId">
+
+          <div class="form-group">
+            <label>Product Name *</label>
+            <input type="text" id="prodName" class="form-control" placeholder="e.g. Melbourne Pure Flax Linen Shirt" required>
+          </div>
+
+          <div class="form-grid-3">
+            <div class="form-group">
+              <label>Category *</label>
+              <select id="prodCategory" class="form-control" required>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+                <option value="Unisex">Unisex</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Price (KSh) *</label>
+              <input type="number" id="prodPrice" class="form-control" placeholder="3200" required min="0">
+            </div>
+
+            <div class="form-group">
+              <label>Original Price (KSh)</label>
+              <input type="number" id="prodOriginalPrice" class="form-control" placeholder="4200" min="0">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Initial Stock Units *</label>
+              <input type="number" id="prodStock" class="form-control" placeholder="20" required min="0">
+            </div>
+
+            <div class="form-group">
+              <label>Australian Origin Tag *</label>
+              <input type="text" id="prodOrigin" class="form-control" placeholder="e.g. Imported from Melbourne, Australia" value="Imported from Australia" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Available Sizes (comma-separated)</label>
+              <input type="text" id="prodSizes" class="form-control" placeholder="S, M, L, XL, XXL" value="S, M, L, XL">
+            </div>
+
+            <div class="form-group">
+              <label>Colors (comma-separated)</label>
+              <input type="text" id="prodColors" class="form-control" placeholder="White, Navy, Sage" value="Standard">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Badge / Highlight Tag</label>
+              <input type="text" id="prodBadge" class="form-control" placeholder="e.g. Aussie Flax Linen, Best Seller" value="Aussie Import">
+            </div>
+
+            <div class="form-group">
+              <label>Image URL</label>
+              <input type="text" id="prodImageUrl" class="form-control" placeholder="https://..." value="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+            <textarea id="prodDescription" class="form-control" rows="3" placeholder="Garment composition, fit, Australian provenance..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+              <input type="checkbox" id="prodFeatured" style="width: 18px; height: 18px; accent-color: var(--accent);">
+              <span>Feature this product in Australian Hero Collection</span>
+            </label>
+          </div>
+
+          <div class="admin-modal-footer">
+            <button type="button" class="btn-secondary" onclick="closeProductModal()">Cancel</button>
+            <button type="submit" class="btn-primary" id="btnSaveProduct">Save Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: ADD / EDIT USER & RIGHTS -->
+  <!-- ======================================================== -->
+  <div class="admin-modal-overlay" id="userModal">
+    <div class="admin-modal-container" style="max-width: 500px;">
+      <div class="admin-modal-header">
+        <h4 id="userModalTitle" style="font-weight: 800; font-size: 1.15rem;">Add New User / Staff</h4>
+        <button onclick="closeUserModal()" style="font-size: 1.4rem; color: #94a3b8;">&times;</button>
+      </div>
+
+      <div class="admin-modal-body">
+        <form id="userForm" onsubmit="handleUserFormSubmit(event)">
+          <input type="hidden" id="userEditId">
+
+          <div class="form-group">
+            <label>Username *</label>
+            <input type="text" id="userFormUsername" class="form-control" placeholder="e.g. ruaiclerk" required>
+          </div>
+
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="userFormName" class="form-control" placeholder="e.g. John Kamau (Storekeeper)" required>
+          </div>
+
+          <div class="form-group" id="userPasswordGroup">
+            <label>Password (min 6 characters) *</label>
+            <input type="password" id="userFormPassword" class="form-control" placeholder="••••••••" minlength="6">
+            <small id="userPasswordHint" style="display: none; color: #64748b;">Leave empty to keep current password</small>
+          </div>
+
+          <div class="form-group">
+            <label>Role</label>
+            <select id="userFormRole" class="form-control" onchange="handleRoleChange(this.value)">
+              <option value="staff">Staff Member</option>
+              <option value="admin">Administrator</option>
+            </select>
+          </div>
+
+          <!-- User Rights Checkboxes -->
+          <div class="form-group">
+            <label>Assigned Rights & Permissions *</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" id="rightViewStocks" value="view_stocks" checked>
+                <div class="checkbox-text">
+                  <h5>view_stocks</h5>
+                  <p>Allowed to view inventory, product list, and live stock counts.</p>
+                </div>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" id="rightEditInventory" value="edit_inventory">
+                <div class="checkbox-text">
+                  <h5>edit_inventory</h5>
+                  <p>Allowed to add new products, update prices/details, adjust stock quantities, and remove products.</p>
+                </div>
+              </label>
+
+              <label class="checkbox-item">
+                <input type="checkbox" id="rightAdmin" value="admin">
+                <div class="checkbox-text">
+                  <h5>admin</h5>
+                  <p>Full administrative rights: edit front page, change paybill & phone numbers, manage users & rights.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="admin-modal-footer">
+            <button type="button" class="btn-secondary" onclick="closeUserModal()">Cancel</button>
+            <button type="submit" class="btn-primary" id="btnSaveUser">Save User</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="adminToast" class="toast-notice"></div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
